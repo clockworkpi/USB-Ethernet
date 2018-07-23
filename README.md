@@ -35,4 +35,5 @@ iface usb0 inet static
 
 ## Update new CPI Kernel
 Download Kernel image: https://github.com/clockworkpi/Kernel/raw/master/uImage
-to the first partition of the micro SD card.
+
+To the first partition of the micro SD card.
