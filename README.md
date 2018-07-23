@@ -33,7 +33,7 @@ iface usb0 inet static
       netmask 255.255.255.0
 ```         
 
-## Update new CPI Kernel
+## Update the Kernel
 Download the Kernel image:
 
 https://github.com/clockworkpi/Kernel/raw/master/uImage
