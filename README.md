@@ -34,7 +34,7 @@ iface usb0 inet static
 ```         
 
 ## Update new CPI Kernel
-Download Kernel image:
+Download the Kernel image:
 
 https://github.com/clockworkpi/Kernel/raw/master/uImage
 
