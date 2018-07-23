@@ -4,7 +4,7 @@
 ```
 apt-get install isc-dhcp-server
 ```
-## Edit "isc-dhcp-server"
+## Edit file "isc-dhcp-server"
 Open the file: ```/etc/default/isc-dhcp-server```
 
 Add this:
@@ -12,7 +12,7 @@ Add this:
 INTERFACES="usb0"
 ``` 
 
-## Edit "dhcpd.conf"
+## Edit file "dhcpd.conf"
 Open the file: ```/etc/dhcp/dhcpd.conf```
 
 Add this:
@@ -21,7 +21,7 @@ subnet 192.168.10.0 netmask 255.255.255.0 {
   range 192.168.10.10 192.168.10.250;
 }
 ```
-## Edit "interfaces"
+## Edit file "interfaces"
 Open the file: ```/etc/network/interfaces```
 
 Add this:
@@ -34,4 +34,5 @@ iface usb0 inet static
 ```         
 
 ## Update new CPI Kernel
-Download Kernel image: https://github.com/clockworkpi/Kernel/blob/master/uImage to the First partition of the micro SD card.
+Download Kernel image: https://github.com/clockworkpi/Kernel/blob/master/uImage 
+to the First partition of the micro SD card.
