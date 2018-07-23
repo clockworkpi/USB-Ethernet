@@ -1,2 +1,37 @@
-# OTG
-for OTG functions
+# Setup USB Ethernet
+
+## Install isc-dhcp-server
+```
+apt-get install isc-dhcp-server
+```
+## Edit "isc-dhcp-server"
+Open the file: ```/etc/default/isc-dhcp-server```
+
+Add this:
+```
+INTERFACES="usb0"
+``` 
+
+## Edit "dhcpd.conf"
+Open the file: ```/etc/dhcp/dhcpd.conf```
+
+Add this:
+```
+subnet 192.168.10.0 netmask 255.255.255.0 {
+  range 192.168.10.10 192.168.10.250;
+}
+```
+## Edit "interfaces"
+Open the file: ```/etc/network/interfaces```
+
+Add this:
+```
+allow-hotplug usb0
+auto usb0
+iface usb0 inet static
+      address 192.168.10.1
+      netmask 255.255.255.0
+```         
+
+## Update new CPI Kernel
+Download Kernel image: https://github.com/clockworkpi/Kernel/blob/master/uImage to the First partition of the micro SD card.
