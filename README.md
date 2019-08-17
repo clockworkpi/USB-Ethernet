@@ -1,3 +1,5 @@
+## This is outdated,in os image v0.3 or later,usb network is already included,just flash the os image
+
 # Setup USB Ethernet
 
 ## Install isc-dhcp-server
@@ -40,5 +42,4 @@ https://github.com/clockworkpi/Kernel/raw/master/uImage
 
 To the first partition of the micro SD card.
 
-## in v0.3 or later os image,usb network is already included,just flash the os image
 
