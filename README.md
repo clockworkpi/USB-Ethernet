@@ -33,12 +33,12 @@ iface usb0 inet static
       netmask 255.255.255.0
 ```         
 
-## Update the Kernel（ os image before v0.3 )
+## Update the Kernel（ os image v0.1 )
 Download the Kernel image:
 
 https://github.com/clockworkpi/Kernel/raw/master/uImage
 
 To the first partition of the micro SD card.
 
-## in v0.3 or later os image,usb network is already included
+## in v0.3 or later os image,usb network is already included,just flash the os image
 
